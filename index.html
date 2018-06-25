@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamburguer Navbar</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.navbar-toggler').click(function () {
+                $('.animated-icon1,.animated-icon3,.animated-icon4').toggleClass('open');
+            });
+        });
+    </script>
+
+    <!-- primeiro jeito -->
+    <link rel="stylesheet" href="hamburguer-bs4.css"></link>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-3">
+        <a class="navbar-brand" href="#">Animated Icons MD Bootstrap</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <!--
+            <span class="navbar-toggler-icon"></span>
+            -->
+            <div class="animated-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <!--
+            <span class="navbar-toggler-icon"></span>
+            -->
+            <div class="animated-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <!--
+            <span class="navbar-toggler-icon"></span>
+            -->
+            <div class="animated-icon4">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+
+    
+</body>
+
+</html>
