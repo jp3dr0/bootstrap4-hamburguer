@@ -1,0 +1,22 @@
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: white !important;
+
+    /* largura do navbar toogler */
+    width: 30px;
+
+    /* altura das linhas */
+    height: 4px;
+}
+
+.hamburger-box {
+    /* mexe para esquerda e direita o navbar toogler */
+    width: 30px;
+
+    /* "margin-top" do navbar toogler */
+    height: 4px;
+}
+
+.hamburger {
+    padding: 5px !important;
+}
+
